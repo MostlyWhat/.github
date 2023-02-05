@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/MostlyWhat/.../discussions
+    about: Start a discussion
+  - name: Discord support server
+    url: https://discord.gg/THmTE3Y9ag
+    about: The best place to go for help installing or using MostlyWhat's softwares.
