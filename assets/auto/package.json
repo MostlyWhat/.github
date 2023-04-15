@@ -1,12 +1,18 @@
 {
-  "name": "auto-updater",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "echo 'This is a fake package.json to install auto and publish packages!'",
-    "release": "auto shipit"
-  },
-  "devDependencies": {
-    "auto": "^10.44.0"
-  }
+    "name": "auto-updater",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "echo 'This is a fake package.json to install auto and publish packages!'",
+        "release": "auto shipit",
+        "canary": "auto canary"
+    },
+    "devDependencies": {
+        "@auto-it/all-contributors": "^10.44.0",
+        "@auto-it/conventional-commits": "^10.44.0",
+        "@auto-it/first-time-contributor": "^10.44.0",
+        "@auto-it/git-tag": "^10.44.0",
+        "@auto-it/magic-zero": "^10.44.0",
+        "auto": "^10.44.0"
+    }
 }
