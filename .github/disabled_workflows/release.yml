@@ -1,3 +1,7 @@
+# Boilerplate Code for Releasing Using Auto by Intuit
+# Follow this beforehand: https://intuit.github.io/auto/docs/welcome/getting-started
+# Modify Parts to Suit Needs
+
 name: Publish Release
 
 on: [push, pull_request]
@@ -16,6 +20,23 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 19.x
+          
+      - name: Install Tools
+        run: |
+          choco install zip wget -y
+          
+      - name: Zip Everything
+        run: |
+          # Create dist folder if it doesn't exist
+          mkdir -p dist
+
+          # .zip the files with exclusion
+          zip -r dist/Auto-Compiled.zip . -x "README.md" "assets/*" ".github/*" ".git/*" ".gitignore" ".autorc" "dist/*" ".vscode/*"
+          
+      - name: Clone Fake Package.json
+        run: |
+          # Download Fake Package.json
+          wget "https://raw.githubusercontent.com/MostlyWhat/.github/main/assets/auto/package.json"
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
