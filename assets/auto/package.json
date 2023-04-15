@@ -12,7 +12,6 @@
         "@auto-it/conventional-commits": "^10.44.0",
         "@auto-it/first-time-contributor": "^10.44.0",
         "@auto-it/git-tag": "^10.44.0",
-        "@auto-it/magic-zero": "^10.44.0",
         "auto": "^10.44.0"
     }
 }
