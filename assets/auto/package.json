@@ -6,7 +6,7 @@
     "start": "echo 'This is a fake package.json to install auto and publish packages!'",
     "release": "auto shipit"
   },
-  "dependencies": {
+  "devDependencies": {
     "auto": "^10.37.6"
   }
 }
