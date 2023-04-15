@@ -7,6 +7,6 @@
     "release": "auto shipit"
   },
   "devDependencies": {
-    "auto": "^10.37.6"
+    "auto": "^10.44.0"
   }
 }
